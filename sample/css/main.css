@@ -3,11 +3,17 @@
 	margin: 0;
 	padding: 0;
 }
-.mixed {
-	/* -webkit-text-orientation: mixed; */
-	/* text-orientation: mixed; */
+.mixed {/* 文字縦書き横向き */
 	writing-mode: vertical-rl;
 	-ms-writing-mode: tb-rl;
+}
+.menu{
+	float: left;
+	width: 50px;
+	margin-right:10px;
+}
+.mini-box{
+	border-top:13px solid rgb(0,0,0);
 }
 @media (min-width:767px){
 	.grid{/* トップページ作品陳列１：１：１ */
@@ -33,8 +39,7 @@
 		height:530px;
 		padding-top:25px;
 		text-align:center;
-		border:0.5px solid rgb(0,0,0);/* 枠線 */
-		background-color: rgb(0,0,0);/* 透明度入れた箱の色 */
+		background-color: rgb(0,0,0);
 		box-shadow: 15px 15px 30px 10px rgba(0,0,0,0.4);/* 水平　垂直　ぼかし具合　広がり具合 */
 	}
 .card-txt{
@@ -45,7 +50,19 @@
 	font-family: "ヒラギノ明朝 Pro";
 	line-height: 2.0;/* 行間 */
 }
+.triangle{
+	border-top: 62px solid transparent;
+	border-right: 62px solid #f6da69;
+	margin-bottom:0;
+}
 @media (max-width:766px){/* 作品陳列　パソコン用を消す　スマホ */
+	.menu{
+		width:30px;
+		margin-right:5px;
+	}
+	.mixed{
+		font-size: 24px;
+	}
 	.grid{
 		display: grid;
 		grid-template-columns:1fr 1fr;
@@ -65,6 +82,32 @@
 	.card-txt{
 		font-size: 13px;
 		line-height: 1.6;/* 行間 */
-}
+	}
+	.triangle{
+		border-top: 39px solid transparent;
+		border-right: 39px solid #f6da69;
+		text-align:bottom;
+	}
 }
 
+.section-bottom{
+	margin-bottom:200px;
+}
+
+.txt-top{
+	color:rgb(255,255,255);
+	font-size: 24px;
+	font-family: "ヒラギノ明朝 Pro";
+}
+.top-menu{
+	float: left;
+	width: 20%;
+}
+.black-top{
+	width:100%;
+	height:auto;
+	background-color: rgb(0,0,0);
+}
+.img-top{
+	width:80%;
+}

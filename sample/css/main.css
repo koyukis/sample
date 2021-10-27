@@ -94,6 +94,17 @@
 	margin-bottom:200px;
 }
 
+
+
+.txt{
+	font-family: "ヒラギノ明朝 Pro";
+}
+.right{
+	margin-right:10%;
+}
+.left{
+	margin-left:10%;
+}
 .txt-top{
 	color:rgb(255,255,255);
 	font-size: 24px;
@@ -110,4 +121,19 @@
 }
 .img-top{
 	width:80%;
+}
+.imgs{
+	width:100%;
+}
+.bag-jpg{
+	float: left;
+	width: 40%;
+	margin-right:10px;
+}
+.bag-jpg-center{
+	position: absolute;
+	/* height: 50px;
+	width: 200px; */
+	/* top: 50%; */
+	transform: translateY(-50%);
 }

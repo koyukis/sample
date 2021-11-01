@@ -101,7 +101,9 @@
 	margin-left:1%;
 	border-top:2px solid rgb(0,0,0);
 }
-
+.txt-h2{
+	font-family: "ヒラギノ明朝 Pro";
+}
 .txt{
 	font-family: "ヒラギノ明朝 Pro";
 	font-size:20px;

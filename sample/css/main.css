@@ -95,11 +95,21 @@
 	margin-bottom:200px;
 }
 .pages-section-bottom{
-	padding-top:10%;
-	padding-bottom:10%;
+	padding-top:18%;
+	padding-bottom:18%;
 	margin-right:1%;
 	margin-left:1%;
 	border-top:2px solid rgb(0,0,0);
+}
+.pages-h1-bottom{
+	margin-bottom:10%;
+}
+.pages-center{
+	text-align:center;
+}
+.pages-right{
+	text-align:right;
+	/* margin-left:70%; */
 }
 .txt-h2{
 	font-family: "ヒラギノ明朝 Pro";
@@ -107,10 +117,12 @@
 .txt{
 	font-family: "ヒラギノ明朝 Pro";
 	font-size:20px;
+	line-height: 1.6;
 }
-.txt-ex{
+.txt-ex{/* 説明部分 */
 	font-family: "ヒラギノ明朝 Pro";
 	font-size:25px;
+	line-height: 1.6;
 }
 .right{
 	margin-right:10%;
@@ -146,11 +158,24 @@
 	margin-right:10%;
 	margin-left:10%;
 }
+.img{
+	width:100%;
+}
 
 .bag-jpg{
 	float: left;
 	width: 30%;
 	margin-right:10px;
+}
+.higashiyama-jpg{
+	float: right;
+	width: 30%;
+}
+.higashiyama-marker{
+	background : linear-gradient(transparent 20%, #ffa64d 65%);
+}
+.higashiyama-box{
+	border:2px dashed #ffa64d;
 }
 .bag-work{
 	margin-bottom:20%;
@@ -164,6 +189,11 @@
 }
 .pages-grid-item{
 	width:100%;
+}
+.pages-grid-none{
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	gap:1%;
 }
 @media (max-width:766px){/* 作品陳列　パソコン用を消す　スマホ */
 	.txt-top{

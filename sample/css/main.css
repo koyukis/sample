@@ -125,12 +125,17 @@
 .txt{
 	font-family: "ヒラギノ明朝 Pro";
 	font-size:20px;
-	line-height: 1.6;
+	line-height: 1.8;
 }
 .txt-ex{/* 説明部分 */
 	font-family: "ヒラギノ明朝 Pro";
 	font-size:25px;
-	line-height: 1.6;
+	line-height: 1.8;
+}
+.txt-top{
+	font-family: "ヒラギノ明朝 Pro";
+	font-size:40px;
+	line-height: 1.8;
 }
 .right{
 	margin-right:10%;
@@ -138,16 +143,7 @@
 .left{
 	margin-left:10%;
 }
-.txt-top{
-	color:rgb(255,255,255);
-	font-size: 45px;
-	font-family: "ヒラギノ明朝 Pro";
-	justify-content: flex-end;
-	margin-left:30%;
-	margin-right:30%;
-	margin-top:50%;
 
-}
 
 /* .top-menu{
 	float: left;
@@ -235,6 +231,26 @@
 }
 
 
+/* ネコ */
+.neko-jpg{
+	width:80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+/* モーキャプ */
+.motion-work{
+	margin-bottom:5%;
+}
+
+
+/* パンフレット */
+.pamph-work-top{
+	margin-top:20%;
+}
+
+
 .pages-grid{
 	display: grid;
 	grid-template-columns:1fr 1fr;
@@ -252,7 +268,6 @@
 @media (max-width:766px){/* 作品陳列　パソコン用を消す　スマホ */
 	.txt-top{
 		font-size:18px;
-		margin-top:30%;
 	}
 	.txt-ex{
 		font-size:15px;

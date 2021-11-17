@@ -26,34 +26,12 @@ $('.slider').slick({
 // ]
 });
 
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
 $(function(){
-    $('#katudon_turn').turn(
+    $('#flipbook').turn(
         {
+            
                 // 自動でページをめくったときの高さ
-                elevation: 50,
+                elevation: 100,
 
                 // ページめくりのスピード(ms)
                 duration: 1000,
@@ -65,7 +43,7 @@ $(function(){
                 autoCenter: false,
 
                 // 右開きか左開きかの設定->右開き
-                direction: 'rtl',
+                direction: 'ltr',
         }
     );
 

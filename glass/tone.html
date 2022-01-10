@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<title>タブに出る表示</title>
+		<meta name="keywords" content="WAV, wav, 卓展, 卓, 卓展2021" />
+		<meta name="description" content="どんなサイトなのかの説明" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body>
+		<header>
+            <img class="logo header" src="images/logo.png">
+        </header>
+		<main>
+            <p class="p-center border subject">イメージを選択 - トーン</p>
+            <p class="p-center">作品のイメージに合うトーンをタップ</p>
+            <div><img class="tone-img" src="images/tone/soft.PNG" alt="soft"></div>
+            <img class="tone-img" id="img1" onclick="imgClick" src="images/tone/light.PNG" alt="light">
+            <img class="tone-img" src="images/tone/dark.PNG" alt="dark">
+            <img class="tone-img" src="images/tone/greyish.PNG" alt="greyish">
+            <img class="tone-img" src="images/tone/deep.PNG" alt="deep">
+            <img class="tone-img" src="images/tone/vivid.PNG" alt="vivid">
+            <img class="tone-img" src="images/tone/strong.PNG" alt="strong">
+            <img class="tone-img" src="images/tone/pale.PNG" alt="pale">
+            <img class="tone-img" src="images/tone/dark-greyish.PNG" alt="dark-greyish">
+            <img class="tone-img" src="images/tone/light-greyish.PNG" alt="light-greyish">
+            <img class="tone-img" src="images/tone/dull.PNG" alt="dull">
+            <img class="tone-img" src="images/tone/bright.PNG" alt="bright">
+
+            <!-- <style>
+                .big{
+                    transform:scale(2.0,2.0);
+                }
+            </style> -->
+            <script language="javascript" type="text/javascript">
+                function imgClick(){
+                    // img1.classList.remove('big');
+                    var obj = document.images['img1'];
+                    obj.height=500;
+                    boj.width=500;
+                }
+            </script>
+			<div class="flex-center btn-last">
+                <div>
+                    <a href="https://koyukis.github.io/glass/self-ap.html" class="under-line"></a>
+                    <button class="btntextchange btn-move">戻る</button></div>
+				<div>
+
+                    <button class="btntextchange btn-move">次へ</button></div>
+
+			</div>
+
+        </main>
+		<footer></footer>
+	</body>
+</html>

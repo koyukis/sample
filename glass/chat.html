@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<title>タブに出る表示</title>
+		<meta name="keywords" content="WAV, wav, 卓展, 卓, 卓展2021" />
+		<meta name="description" content="どんなサイトなのかの説明" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body>
+		<header>
+            <img class="logo header" src="images/logo.png">
+        </header>
+		<main>
+            <div class="chat-grid">
+                <div class="chat-grid-item"></div>
+                <div class="chat-grid-item chat-back">
+					<form action="" method="post">
+						メッセージ：<br />
+						<input type="text" name="message" size="50" value="" />
+						<input type="submit" value="送信" />
+					</form>
+					<?php
+						$fp = fopen('message.txt', 'r');
+						print"koyu";
+						while ($line = fgets($fp)) {
+						echo '<p>' . htmlspecialchars($line, ENT_QUOTES) . "</p>\n";
+						}
+						fclose($fp);
+
+					?>
+				</div>
+        </main>
+		<footer></footer>
+	</body>
+</html>
